@@ -42,10 +42,11 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form 
-          data-netlify="true"
+        
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
+          netlify
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
