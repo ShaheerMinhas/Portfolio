@@ -42,16 +42,16 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form 
-        
+         name ="contact"
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
-          data-netlify="true"
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
-              type='text'
+              id="name"
+              type='hidden'
               name='name'
               value={form.name}
               onChange={handleChange}
@@ -62,7 +62,8 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
-              type='email'
+              id="email"
+              type='hidden'
               name='email'
               value={form.email}
               onChange={handleChange}
@@ -73,6 +74,7 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
+              id="message"
               rows={7}
               name='message'
               value={form.message}
