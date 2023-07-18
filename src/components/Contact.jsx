@@ -47,11 +47,11 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
+        <input type="hidden" name="form-name" value="contact"/>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               id="name"
-              type='hidden'
               name='name'
               value={form.name}
               onChange={handleChange}
@@ -63,7 +63,7 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
               id="email"
-              type='hidden'
+              type='text'
               name='email'
               value={form.email}
               onChange={handleChange}
