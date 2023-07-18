@@ -43,8 +43,7 @@ const Contact = () => {
 
         <form 
          name ="contact"
-          ref={formRef}
-          onSubmit={handleSubmit}
+         method="POST"
           className='mt-12 flex flex-col gap-8'
         >
         <input type="hidden" name="form-name" value="contact"/>
@@ -88,7 +87,6 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
-            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
