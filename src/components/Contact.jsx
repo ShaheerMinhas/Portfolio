@@ -11,7 +11,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    message: "",
+    message: "", 
   });
 
   const [loading, setLoading] = useState(false);
