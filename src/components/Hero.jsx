@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Pushing The boundries of HEROISM BLAH BLAH LEVI ACKERMAN<span className='text-[#915EFF]'>Innovation</span>
+            Pushing the Boundries of <span className='text-[#915EFF]'>Innovation</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             We develop React App <br className='sm:block hidden' />
