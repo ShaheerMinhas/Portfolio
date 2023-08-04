@@ -17,7 +17,7 @@ import PhotoCard  from "../components/PhotoCard.jsx";
 const Data = [
   {
     name: "Shaheer Minhhas",
-    position: "Founder",
+    position: "Finance Head",
     imageUrl: "pictures/shaheer.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
@@ -26,7 +26,7 @@ const Data = [
   },
   {
     name: "Zain Asher",
-    position: "Founder",
+    position: "Marketting Manager",
     imageUrl: "pictures/zain.jpeg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
@@ -35,7 +35,7 @@ const Data = [
   },
   {
     name: "Romisha Maria",
-    position: "Founder",
+    position: "Social Media Handler",
     imageUrl: "pictures/romesa.jpeg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
@@ -44,8 +44,8 @@ const Data = [
   },
   {
     name: "Ahsan Naveed",
-    position: "pictures/ahsan.jpg",
-    imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
+    position: "Designer",
+    imageUrl: "pictures/ahsan.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
     twitter: "",
@@ -53,8 +53,8 @@ const Data = [
   },
   {
     name: "Abbas Rizvi",
-    position: "pictures/abbas.jpeg",
-    imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
+    position: "HR",
+    imageUrl: "pictures/abbas.jpeg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
     twitter: "",
