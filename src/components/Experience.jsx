@@ -36,7 +36,7 @@ const Data = [
   {
     name: "Romisha Maria",
     position: "Founder",
-    imageUrl: "romesa.jpeg",
+    imageUrl: "pictures/romesa.jpeg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
     twitter: "",
@@ -44,7 +44,7 @@ const Data = [
   },
   {
     name: "Ahsan Naveed",
-    position: "ahsan.jpg",
+    position: "pictures/ahsan.jpg",
     imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
@@ -53,7 +53,7 @@ const Data = [
   },
   {
     name: "Abbas Rizvi",
-    position: "abbas.jpeg",
+    position: "pictures/abbas.jpeg",
     imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
