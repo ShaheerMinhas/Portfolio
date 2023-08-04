@@ -44,8 +44,9 @@ const Data = [
   },
   {
     name: "Ahsan Naveed",
-    position: "Designer",
-    imageUrl: "pictures/ahsan.jpg",
+
+    position: "pictures/ahsan2.jpg",
+    imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
     github: "",
     twitter: "",
