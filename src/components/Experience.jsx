@@ -59,7 +59,8 @@ const Data = [
   {
     name: "Abbas Rizvi",
     position: "HR",
-    imageUrl: "pictures/abbas.jpeg",
+
+    imageUrl: "pictures/abbas.jpg",
 
     linkedin: "https://www.linkedin.com/company/rubix-code/about/",
 
