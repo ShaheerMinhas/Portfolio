@@ -30,7 +30,7 @@ const Data = [
     name: "Zain Asher",
 
     position: "Marketing Manager",
-    imageUrl: "pictures/zain.jpg",
+    imageUrl: "pictures/zain1.jpg",
     linkedin: "https://www.linkedin.com/in/zain-asher-3960321b2/",
     github: "",
     insta: ""
