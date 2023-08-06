@@ -18,7 +18,7 @@ html {
 .column {
     float: left;
     margin-left: 2px;
-    width: 33%;
+    width: 23%;
     margin-bottom: 16px;
     background-color: grey;
     border-radius: 30px;
@@ -67,9 +67,9 @@ a {
 h4 {
     backdrop-filter: blur(30px);
     height: 20px;
-    top: 226px;
+    top: 200px;
     left: 5px;
-    width: 100px;
+    width: 80px;
 
     opacity: 0;
     transition: opacity 1s;
