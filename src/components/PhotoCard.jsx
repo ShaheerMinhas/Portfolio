@@ -18,9 +18,7 @@ const PhotoCard = ({ imageUrl, name, position, twitter, insta, github, facebook,
             <h2 className={styles.text}>{name}</h2>
             <h4 className={styles.text}>{position}</h4>
             <div className={styles.icon1}>
-              <a href={twitter} target="_blank" rel="noopener noreferrer" >
-                < FontAwesomeIcon icon={faTwitter} />
-              </a>
+             
               <a href={insta} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>

@@ -17,47 +17,46 @@ import PhotoCard  from "../components/PhotoCard.jsx";
 const Data = [
   {
     name: "Shaheer Minhhas",
-    position: "Founder",
+    position: "Financial Manager",
     imageUrl: "pictures/shaheer.jpg",
-    linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
-    github: "",
-    twitter: "",
+    linkedin: "https://www.linkedin.com/in/shaheer-minhas-86a108231/",
+    github: "https://github.com/ShaheerMinhas",
+   
     insta: ""
   },
   {
     name: "Zain Asher",
-    position: "Founder",
+    position: "Marketing Manager",
     imageUrl: "pictures/zain.jpeg",
-    linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
+    linkedin: "https://www.linkedin.com/in/zain-asher-3960321b2/",
     github: "",
-    twitter: "",
     insta: ""
   },
   {
     name: "Romisha Maria",
-    position: "Founder",
+    position: "Social Manager",
     imageUrl: "pictures/romesa.jpeg",
-    linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
+    linkedin: "https://www.linkedin.com/in/romisha-2326801a4/",
     github: "",
-    twitter: "",
+  
     insta: ""
   },
   {
     name: "Ahsan Naveed",
-    position: "pictures/ahsan2.jpg",
-    imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
-    linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
+    position: "Designer",
+    imageUrl: "pictures/ahsan2.jpg",
+    linkedin: "https://www.linkedin.com/in/ahsan-n-805a5a230/",
     github: "",
-    twitter: "",
+   
     insta: ""
   },
   {
     name: "Abbas Rizvi",
-    position: "pictures/abbas.jpeg",
-    imageUrl: "https://i.ibb.co/0jZ3qYH/IMG-20210905-123751-01.jpg",
-    linkedin: "https://www.linkedin.com/in/shaheer-minhas-1b1b3a1b2/",
+    position: "HR",
+    imageUrl: "pictures/abbas.jpeg",
+    linkedin: "https://www.linkedin.com/company/rubix-code/about/",
     github: "",
-    twitter: "",
+   
     insta: ""
   }
 ]
