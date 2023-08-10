@@ -82,8 +82,7 @@ const Experience = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>MEET OUR</p>
-          <h2 className={styles.sectionSubText}>TEAM</h2>
+          <h2 className={styles.sectionSubText}>MEET OUR TEAM</h2>
         </motion.div>
         <Carousel
           plugins={[
