@@ -1,18 +1,23 @@
+import React,{Component} from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
 
-
-
-import React from "react";
-import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
-import TeamInfo from "./TeamInfo";
-import PhotoCard from "../components/PhotoCard";
-import { textVariant } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
+import "react-vertical-timeline-component/style.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { styles } from "../styles";
-import { motion } from "framer-motion"; // Make sure to import this if not already imported
 
-// Rest of the imports remain the same
-
+import { experiences } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { textVariant } from "../utils/motion";
+import PhotoCard  from "../components/PhotoCard.jsx";
+import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+import { slidesToShowPlugin } from "@brainhubeu/react-carousel";
+import TeamInfo from "./TeamInfo";
 const Data = [
   {
 
@@ -41,15 +46,17 @@ const Data = [
 
     position: "Designer",
 
+
     imageUrl: "pictures/romesa.jpeg",
     linkedin: "https://www.linkedin.com/in/romisha-2326801a4/",
     github: "",
     desc: "Meet Romesa She's a talented coder and a valuable member of our new software company  ",
-
+  
     insta: ""
   },
   {
     name: "Ahsan Naveed",
+
 
     position: "Technical Head",
 
@@ -62,8 +69,8 @@ const Data = [
   {
     name: "Abbas Rizvi",
 
-    position: "Social Media Manager",
 
+    position: "Social Media Manager",
     imageUrl: "pictures/abbas.jpg",
 
     linkedin: "https://www.linkedin.com/company/rubix-code/about/",
@@ -72,15 +79,19 @@ const Data = [
     desc: " Meet Abbas! Our brilliant coder and tech enthusiast Stay tuned for some groundbreaking innovations! ",
     insta: ""
   }
-];
+]
 
 const Experience = () => {
+
   return (
+
+
 
    
     <>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>MEET OUR TEAM</p>
@@ -126,16 +137,40 @@ const Experience = () => {
             arrows: true,
           },
         }}
+
       >
-        {Data.map((member, index) => (
-          <div key={index} className="mb-6 md:flex md:flex-row items-center">
-            <PhotoCard {...member} className="md:mr-4" />
-            <TeamInfo name={member.name} position={member.position} desc={member.desc} />
-          </div>
-        ))}
-      </Carousel>
-    </div>
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>MEET OUR TEAM</p>
+          <h2 className={styles.sectionHeadText}>TEAM</h2>
+        </motion.div>
+        <Carousel
+          plugins={[
+            'infinite',
+            'arrows',
+            {
+              
+              resolve:  autoplayPlugin,
+              options: {
+                interval: 2000, 
+                numberOfSlides: 3
+              }
+            },
+            
+          ]}
+          animationSpeed={1000}
+        >
+          {Data.map((member, index) => (
+            <div key={index} className="team-member-container mb-4 md:flex md:flex-row items-center">
+              <PhotoCard {...member} className="md:mr-4" />
+              <TeamInfo name={member.name} position={member.position} desc={member.desc} />
+            </div>
+          ))}
+      
+        </Carousel>
+      </div>
+    </>
   );
+             
 };
 
 export default SectionWrapper(Experience, "work");
