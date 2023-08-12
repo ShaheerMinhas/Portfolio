@@ -18,21 +18,14 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: white;
-    margin: 10px;
-    /* Add margin to separate cards */
-    border-radius: 10px;
-    overflow: hidden;
-    box-sizing: border-box;
-    /* Fix box-sizing for padding */
-    padding: 8px;
-    /* Add padding within cards */
-    background-size: contain;
-    /* Use 'cover' for background-size */
-    background-position: center;
-    /* Center the background image */
-    transition: background 0.8s, border 1s, opacity 1s;
-    /* Combine transitions */
-    position: relative;
+
+
+    display: flex;
+    font-family: myfont, Dosis;
+    color: white;
+    background-color: #050816;
+
+
 }
 
 /* Add hover effect to card border */
@@ -69,17 +62,51 @@
     color: white;
 }
 
-/* Heading styles */
-h4 {
+
+h2 {
     backdrop-filter: blur(30px);
-    height: 20px;
-    top: 200px;
-    left: 5px;
-    width: 80px;
+    font-weight: 900;
+    font-size: 600px;
+    text-align:start;
+    text-align-last: left;
+    width: 150px;
     opacity: 0;
     transition: opacity 1s;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: rgb(255, 255, 255);
+} 
+
+h4 {
+    backdrop-filter: blur(30px);
+    opacity: 0;
+    transition: opacity 1s;
+    width: 200px;
+
+}
+
+.text {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+
 }
 
 /* Media query for mobile */
@@ -91,4 +118,142 @@ h4 {
         width: 100%;
             height: auto;
     }
+
+}
+
+.container {
+ 
+
+    height: auto;
+    /* Remove fixed height */
+    max-width: 1280px;
+    min-width: 320px;
+    /* Change min-width to a smaller value */
+    display: flex;
+    flex-wrap: wrap;
+    /* Add flex-wrap to allow cards to wrap to next line on smaller screens */
+    justify-content: center;
+    /* Center columns horizontally */
+    align-items: center;
+    /* Center columns vertically */
+}
+
+.border {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 10px;
+    background-size: 300px;
+
+
+}
+
+.card0 {
+    /* background: url("ahsan.jpg.JPG") center center no-repeat; */
+}
+
+.card:hover {
+    background: center top no-repeat;
+    background-size: 350px;
+}
+
+.card:hover h2,
+.card:hover .icon1,
+.card:hover h4 {
+    opacity: 1;
+}
+
+/* 
+.card1 {
+  background: url("ahsan.jpg.JPG") center center no-repeat;
+  background-size: 300px;
+}
+
+.card1:hover {
+  background: url("ahsan.jpg.JPG") center center no-repeat;
+  background-size: 600px;
+}
+
+.card1:hover h2,
+.card1:hover .icon2,
+.card1:hover h4 {
+  opacity: 1;
+}
+
+.card2 {
+  background: url("ahsan.jpg.JPG") left center no-repeat;
+  background-size: 300px;
+}
+
+.card2:hover {
+  background: url("ahsan.jpg.JPG") center center no-repeat;
+  background-size: 400px;
+} */
+
+.card2:hover h2,
+.card2:hover .icon3,
+.card2:hover h4 {
+    opacity: 1;
+}
+
+/* h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(252, 252, 252);
+    border-radius: 5%;
+    opacity: 0;
+    transition: opacity 1s;
+} */
+
+h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 5%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.fas {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    backdrop-filter: blur(100px);
+    border-radius: 20px 20px 20px 20px;
+    height: 130px;
+    top: 226px;
+    left: 5px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 1s;
+
 }
