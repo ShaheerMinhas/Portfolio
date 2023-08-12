@@ -2,14 +2,14 @@ import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './PhotoCard.module.css';
-import { faCodepen, faInstagram, faDribbble, faTwitter, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { SectionWrapper } from "../hoc";
+import { faInstagram, faGithub, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const PhotoCard = ({ imageUrl, name, position, twitter, insta, github, facebook, linkedin }) => {
+const PhotoCard = ({ imageUrl, name, position, insta, github, facebook, linkedin }) => {
   return (
-    <div className={styles.card} style={{ backgroundImage: `url("${imageUrl}")`, backgroundColor: "#fff" }}>
+    <div className={styles.card}>
       <div className={styles.border}>
-        
+        <img src={imageUrl} alt={name} className={styles.image} />
+
         <h4 className={styles.text}>{position}</h4>
         <div className={styles.icon1}>
           {insta && (
