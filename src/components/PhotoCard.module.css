@@ -28,7 +28,12 @@ html {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: white;
-    margin-left: 1rem;
+
+    display: flex;
+    font-family: myfont, Dosis;
+    color: white;
+    background-color: #050816;
+
 }
 
 .aboutSection {
@@ -54,34 +59,29 @@ a {
     color: #fff;
 }
 
-/* h2 {
+h2 {
     backdrop-filter: blur(30px);
-    height: 30px;
-    top: 226px;
-    left: 5px;
-    width: 200px;
-    text-align: center;
+    font-weight: 900;
+    font-size: 600px;
+    text-align:start;
+    text-align-last: left;
+    width: 150px;
     opacity: 0;
     transition: opacity 1s;
-} */
+} 
 
 h4 {
     backdrop-filter: blur(30px);
-    height: 20px;
-    top: 200px;
-    left: 5px;
-    width: 80px;
-
     opacity: 0;
     transition: opacity 1s;
-
+    width: 200px;
 
 }
 
 .text {
-
+    margin-left: 10px;
+    margin-top: 10px;
     border-radius: 20px 20px 20px 20px;
-
 }
 
 .title {
@@ -163,8 +163,8 @@ h4 {
 }
 
 .card:hover {
-    /* background: url("ahsan.jpg.JPG") center center no-repeat; */
-    background-size: 400px;
+    background: center top no-repeat;
+    background-size: 350px;
 }
 
 .card:hover h2,
@@ -217,7 +217,6 @@ h4 {
 h4 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(255, 255, 255);
-
     border-radius: 5%;
     opacity: 0;
     transition: opacity 1s;
@@ -239,7 +238,7 @@ h4 {
     height: 130px;
     top: 226px;
     left: 5px;
-    width: 40px;
+    width: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;

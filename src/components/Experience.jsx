@@ -21,7 +21,9 @@ import TeamInfo from "./TeamInfo";
 const Data = [
   {
     name: "Shaheer Minhhas",
+
     position: "Financial Manager",
+
     imageUrl: "pictures/shaheer.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-86a108231/",
     github: "https://github.com/ShaheerMinhas",
@@ -30,6 +32,7 @@ const Data = [
   },
   {
     name: "Zain Asher",
+
     position: "Marketing Manager",
     imageUrl: "pictures/zain1.jpg",
     linkedin: "https://www.linkedin.com/in/zain-asher-3960321b2/",
@@ -39,7 +42,9 @@ const Data = [
   },
   {
     name: "Romisha Maria",
-    position: "Social Manager",
+
+    position: "Social Media Handler",
+
     imageUrl: "pictures/romesa.jpeg",
     linkedin: "https://www.linkedin.com/in/romisha-2326801a4/",
     github: "",
@@ -49,6 +54,7 @@ const Data = [
   },
   {
     name: "Ahsan Naveed",
+
     position: "Designer",
     imageUrl: "pictures/ahsan2.JPG",
     linkedin: "https://www.linkedin.com/in/ahsan-n-805a5a230/",
@@ -59,8 +65,11 @@ const Data = [
   {
     name: "Abbas Rizvi",
     position: "HR",
+
     imageUrl: "pictures/abbas.jpg",
+
     linkedin: "https://www.linkedin.com/company/rubix-code/about/",
+
     github: "",
     desc: " Meet Abbas! Our brilliant coder and tech enthusiast Stay tuned for some groundbreaking innovations! ",
     insta: ""
@@ -77,7 +86,6 @@ const Experience = () => {
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>MEET OUR TEAM</p>
-          <h2 className={styles.sectionHeadText}>TEAM</h2>
         </motion.div>
         <Carousel
           plugins={[
