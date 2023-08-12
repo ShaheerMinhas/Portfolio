@@ -95,18 +95,12 @@ const Experience = () => {
           ]}
           animationSpeed={1000}
         >
-        
-          {
-            Data.map((member, index) => (
-              <div key="index" className="flex  ml-2">
-                {/* Apply ml-4 (margin left 1rem) to PhotoCard */}
-                <PhotoCard key={index} {...member} className="ml-10"/>
-                <TeamInfo name={member.name} position ={member.position} desc={member.desc}/>
-              </div>
-              
-              
-            ))
-          }
+          {Data.map((member, index) => (
+            <div key={index} className="team-member-container mb-6 md:flex md:flex-row items-center">
+              <PhotoCard {...member} className="md:mr-4" />
+              <TeamInfo name={member.name} position={member.position} desc={member.desc} />
+            </div>
+          ))}
       
         </Carousel>
       </div>
