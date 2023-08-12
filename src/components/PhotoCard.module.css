@@ -1,63 +1,67 @@
-/* body {
-    display: flex;
-    font-family: myfont, Dosis;
-    color: white;
-    background-color: #050816;
-}
-
-html {
-    box-sizing: border-box;
-} */
-
+/* Reset box-sizing and apply inheritance */
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
-
-.column {
-    float: left;
-    margin-left: 2px;
-    width: 23%;
-    margin-bottom: 16px;
-    background-color: grey;
-    border-radius: 30px;
-    padding: 0 8px;
+.image {
+    width: 100%;
+    /* Set the image width to 100% of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 200px;
+    /* Limit the maximum image height */
+    object-fit: cover;
+    /* Cover the container with the image, maintaining aspect ratio */
 }
-
+/* Basic styling for cards */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: white;
 
+
     display: flex;
     font-family: myfont, Dosis;
     color: white;
     background-color: #050816;
 
+
 }
 
-.aboutSection {
+/* Add hover effect to card border */
+.card:hover {
+    border: 1px solid white;
+}
 
-    padding: 50px;
-    text-align: center;
-    background-color: #050816;
+/* Style for card content */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* Use height: 100% for proper alignment */
+}
+
+/* Icon container styles */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    opacity: 0;
+    transition: opacity 1s;
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+}
+
+/* Text styles */
+.text {
+    border-radius: 20px;
     color: white;
 }
 
-.container {
-    padding: 0 16px;
-}
-
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-a {
-    color: #fff;
-}
 
 h2 {
     backdrop-filter: blur(30px);
@@ -102,13 +106,19 @@ h4 {
 
 .button:hover {
     background-color: #555;
+
 }
 
+/* Media query for mobile */
 @media screen and (max-width: 650px) {
-    .column {
+    .card {
+        
+        /* Adjust width for smaller screens */
+        /* Adjust height as needed for your design */
         width: 100%;
-        display: block;
+            height: auto;
     }
+
 }
 
 .container {
@@ -245,4 +255,5 @@ h4 {
     justify-content: space-around;
     opacity: 0;
     transition: opacity 1s;
+
 }

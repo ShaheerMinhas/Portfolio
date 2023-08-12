@@ -1,0 +1,11 @@
+.team-member-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* On desktop, both components side by side */
+
+    @media (max-width: 768px) {
+        /* Adjust the breakpoint as needed */
+        grid-template-columns: 1fr;
+        /* On mobile, components stacked */
+    }
+}
