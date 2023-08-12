@@ -28,6 +28,7 @@ html {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: white;
+    margin-left: 1rem;
 }
 
 .aboutSection {
@@ -111,6 +112,7 @@ h4 {
 }
 
 .container {
+ 
 
     height: auto;
     /* Remove fixed height */
