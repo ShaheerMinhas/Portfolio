@@ -20,8 +20,11 @@ import { slidesToShowPlugin } from "@brainhubeu/react-carousel";
 import TeamInfo from "./TeamInfo";
 const Data = [
   {
-    name: "Shaheer Minhhas",
+
+    name: "Shaheer Minhas",
+
     position: "Financial Manager",
+
     imageUrl: "pictures/shaheer.jpg",
     linkedin: "https://www.linkedin.com/in/shaheer-minhas-86a108231/",
     github: "https://github.com/ShaheerMinhas",
@@ -30,6 +33,7 @@ const Data = [
   },
   {
     name: "Zain Asher",
+
     position: "Marketing Manager",
     imageUrl: "pictures/zain1.jpg",
     linkedin: "https://www.linkedin.com/in/zain-asher-3960321b2/",
@@ -39,7 +43,10 @@ const Data = [
   },
   {
     name: "Romisha Maria",
-    position: "Social Manager",
+
+    position: "Designer",
+
+
     imageUrl: "pictures/romesa.jpeg",
     linkedin: "https://www.linkedin.com/in/romisha-2326801a4/",
     github: "",
@@ -49,7 +56,10 @@ const Data = [
   },
   {
     name: "Ahsan Naveed",
-    position: "Designer",
+
+
+    position: "Technical Head",
+
     imageUrl: "pictures/ahsan2.JPG",
     linkedin: "https://www.linkedin.com/in/ahsan-n-805a5a230/",
     github: "",
@@ -58,9 +68,13 @@ const Data = [
   },
   {
     name: "Abbas Rizvi",
-    position: "HR",
+
+
+    position: "Social Media Manager",
     imageUrl: "pictures/abbas.jpg",
+
     linkedin: "https://www.linkedin.com/company/rubix-code/about/",
+
     github: "",
     desc: " Meet Abbas! Our brilliant coder and tech enthusiast Stay tuned for some groundbreaking innovations! ",
     insta: ""
@@ -70,10 +84,60 @@ const Data = [
 const Experience = () => {
 
   return (
+
+
+
    
     <>
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+
+      >
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>MEET OUR TEAM</p>
+        </motion.div>
+        <Carousel
+          plugins={[
+            'infinite',
+            'arrows',
+            {
+              
+              resolve:  autoplayPlugin,
+              options: {
+                interval: 2000, 
+                numberOfSlides: 3
+              }
+            },
+            
+          ]}
+          animationSpeed={1000}
+        >
+        
+
+          {
+            resolve: autoplayPlugin,
+            options: {
+              interval: 2000,
+              numberOfSlides: 1, // Show only one slide at a time on mobile
+            },
+          },
+        ]}
+        animationSpeed={1000}
+        slidesPerPage={1} // Added to ensure one slide per page on mobile
+        breakpoints={{
+          // Adjust these breakpoints based on your design and requirements
+          600: {
+            // Up to 600px screen width (mobile)
+            slidesPerPage: 1,
+            arrows: false, // Hide arrows on mobile
+          },
+          1024: {
+            // Up to 1024px screen width (tablet)
+            slidesPerPage: 3, // Show three slides on tablets
+            arrows: true,
+          },
+        }}
+
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>MEET OUR TEAM</p>
