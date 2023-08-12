@@ -28,10 +28,12 @@ html {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     color: white;
+
     display: flex;
     font-family: myfont, Dosis;
     color: white;
     background-color: #050816;
+
 }
 
 .aboutSection {
@@ -110,6 +112,7 @@ h4 {
 }
 
 .container {
+ 
 
     height: auto;
     /* Remove fixed height */

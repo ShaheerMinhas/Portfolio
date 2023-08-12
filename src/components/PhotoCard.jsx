@@ -9,7 +9,7 @@ const PhotoCard = ({ imageUrl, name, position, twitter, insta, github, facebook,
   return (
     <div className={styles.card} style={{ backgroundImage: `url("${imageUrl}")`, backgroundColor: "#fff" }}>
       <div className={styles.border}>
-        <h2 className={styles.text}>{name}</h2>
+        
         <h4 className={styles.text}>{position}</h4>
         <div className={styles.icon1}>
           {insta && (
