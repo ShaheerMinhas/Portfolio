@@ -19,23 +19,13 @@ const Data = [
 	{
 		name: 'Shaheer Minhas',
 
-		position: 'Financial Manager',
+		position: 'Developer	',
 
 		imageUrl: 'pictures/shaheer.jpg',
 		linkedin: 'https://www.linkedin.com/in/shaheer-minhas-86a108231/',
 		github: 'https://github.com/ShaheerMinhas',
 		desc: 'Meet Shaheer, the coding virtuoso of our dream team! Say hello to the tech whisperer behind the scenes!',
 		insta: '',
-	},
-	{
-		name: 'Zain Asher',
-
-		position: 'Marketing Manager',
-		imageUrl: 'pictures/zain1.jpg',
-		linkedin: 'https://www.linkedin.com/in/zain-asher-3960321b2/',
-		github: '',
-		insta: '',
-		desc: 'Meet Zain, the big mind behind our new software innovations Stay tuned for more exciting updates',
 	},
 	{
 		name: 'Romisha Maria',
@@ -52,7 +42,7 @@ const Data = [
 	{
 		name: 'Ahsan Naveed',
 
-		position: 'Technical Head',
+		position: 'Developer',
 
 		imageUrl: 'pictures/ahsan2.JPG',
 		linkedin: 'https://www.linkedin.com/in/ahsan-n-805a5a230/',
@@ -61,17 +51,17 @@ const Data = [
 		insta: '',
 	},
 	{
-		name: 'Abbas Rizvi',
+		name: 'Sajjad Ahmed',
 
-		position: 'Social Media Manager',
-		imageUrl: 'pictures/abbas.jpg',
+		position: 'Developer',
 
-		linkedin: 'https://www.linkedin.com/company/rubix-code/about/',
-
+		imageUrl: 'pictures/ahsan2.JPG',
+		linkedin: 'https://www.linkedin.com/in/sajjad-ahmed-993662268/',
 		github: '',
-		desc: ' Meet Abbas! Our brilliant coder and tech enthusiast Stay tuned for some groundbreaking innovations! ',
+		desc: ' Meet Sajjad- our brilliant coder extraordinaire! Say hello to the tech genius behind our innovative solutions! ',
 		insta: '',
 	},
+	
 ];
 
 const Experience = () => {
