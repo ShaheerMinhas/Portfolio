@@ -16,12 +16,12 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Pushing the Boundries of <span className='text-[#915EFF]'>Innovation</span>
+           A Really Creative<span className='text-[#915EFF]'>Website</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            We develop React App <br className='sm:block hidden' />
-            interfaces , web applications
-          </p>
+           Scroll Down To See <br className='sm:block hidden' />
+            Cool Stuff
+            </p>
         </div>
       </div>
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>

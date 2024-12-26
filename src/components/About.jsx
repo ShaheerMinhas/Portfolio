@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -36,25 +34,79 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  // State for handling modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Function to toggle modal
+  const toggleModal = () => setIsModalOpen(!isModalOpen);
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Meet Buttons</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Rubix Code is an innovative technology company that provides solutions and services in content creation, web development, and mobile application development. We help businesses and brands adapt to the digital age by crafting compelling content, building cutting-edge websites, and creating customized mobile apps for Android and IOS platforms.
-      </motion.p>
+       Hover On Each Button To See The Effect . Check out the Tech Stack used in this website below.   </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+      {/* Buttons */}
+      <div className="mt-8 flex space-x-4">
+        {/* Button 1 */}
+        <motion.button
+          className="p-4 bg-blue-500 text-white rounded-lg transition-all duration-300 transform hover:scale-110"
+          whileHover={{ scale: 1.1 }}
+          onClick={toggleModal}
+        >
+          Button 1
+        </motion.button>
+
+        {/* Button 2 */}
+        <motion.button
+          className="p-4 bg-green-500 text-white rounded-lg transition-all duration-300 transform hover:rotate-6"
+          whileHover={{ rotate: 6 }}
+          onClick={toggleModal}
+        >
+          Button 2
+        </motion.button>
+
+        {/* Button 3 */}
+        <motion.button
+          className="p-4 bg-red-500 text-white rounded-lg transition-all duration-300 transform hover:skew-x-6"
+          whileHover={{ skewX: 6 }}
+          onClick={toggleModal}
+        >
+          Button 3
+        </motion.button>
+
+        {/* Button 4 */}
+        <motion.button
+          className="p-4 bg-yellow-500 text-white rounded-lg transition-all duration-300 transform hover:translate-x-4"
+          whileHover={{ x: 4 }}
+          onClick={toggleModal}
+        >
+          Button 4
+        </motion.button>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-xl font-bold">Pop-up Modal</h2>
+            <p className="mt-4">This is the content of the pop-up modal.</p>
+            <button
+              onClick={toggleModal}
+              className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
