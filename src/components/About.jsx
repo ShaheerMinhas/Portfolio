@@ -49,12 +49,13 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] sm:text-base max-w-3xl leading-[30px]'
       >
-       Hover On Each Button To See The Effect . Check out the Tech Stack used in this website below.   </motion.p>
+        Hover on each button to see the effect. Check out the Tech Stack used in this website below.
+      </motion.p>
 
       {/* Buttons */}
-      <div className="mt-8 flex space-x-4">
+      <div className="mt-8 flex flex-wrap justify-center space-x-4 gap-y-4">
         {/* Button 1 */}
         <motion.button
           className="p-4 bg-blue-500 text-white rounded-lg transition-all duration-300 transform hover:scale-110"
@@ -94,10 +95,10 @@ const About = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-xl font-bold">Pop-up Modal</h2>
-            <p className="mt-4">This is the content of the pop-up modal.</p>
+        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-40">
+          <div className="bg-white p-6 rounded-lg shadow-lg z-50">
+            <h2 className="text-xl text-black font-bold">Pop-up Modal</h2>
+            <p className="mt-4 text-black">This is the content of the pop-up modal.</p>
             <button
               onClick={toggleModal}
               className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
