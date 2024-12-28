@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { services } from "../constants";
+import './about.css'
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -34,16 +35,35 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
+
 const About = () => {
   // State for handling modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Function to toggle modal
-  const toggleModal = () => setIsModalOpen(!isModalOpen);
+  const toggleModal = () => {
+    setIsModalOpen((prev) => {
+      console.log("Toggling modal state:", !prev);
+      return !prev;
+    });
+  };
+  // Disable body scrolling when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
 
   return (
     <>
-       <div className='mt-20 flex flex-wrap gap-10'>
+       <div className='mt-20 mb-12 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
@@ -63,56 +83,61 @@ const About = () => {
       <div className="mt-8 flex flex-wrap justify-center space-x-4 gap-y-4">
         {/* Button 1 */}
         <motion.button
-          className="p-4 bg-blue-500 text-white rounded-lg transition-all duration-300 transform hover:scale-110"
+          className="button-59"
           whileHover={{ scale: 1.1 }}
           onClick={toggleModal}
         >
-          Button 1
+          <span class="text">Button 1</span><span>Hi</span>
         </motion.button>
 
         {/* Button 2 */}
         <motion.button
-          className="p-4 bg-green-500 text-white rounded-lg transition-all duration-300 transform hover:rotate-6"
+          className="button-58"
           whileHover={{ rotate: 6 }}
           onClick={toggleModal}
         >
-          Button 2
+          <span class="text">Button 2</span><span>Hi</span>
         </motion.button>
 
         {/* Button 3 */}
         <motion.button
-          className="p-4 bg-red-500 text-white rounded-lg transition-all duration-300 transform hover:skew-x-6"
+          className="button-57"
           whileHover={{ skewX: 6 }}
           onClick={toggleModal}
         >
-          Button 3
+          <span class="text">Button 3</span><span>Hi</span>
         </motion.button>
 
         {/* Button 4 */}
         <motion.button
-          className="p-4 bg-yellow-500 text-white rounded-lg transition-all duration-300 transform hover:translate-x-4"
+          className="button-56"
           whileHover={{ x: 4 }}
           onClick={toggleModal}
         >
-          Button 4
+           <span class="text">Button 4</span><span>Hi</span>
         </motion.button>
       </div>
 
-      {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-40">
-          <div className="bg-white p-6 rounded-lg shadow-lg z-50">
-            <h2 className="text-xl text-black font-bold">Pop-up Modal</h2>
-            <p className="mt-4 text-black">This is the content of the pop-up modal.</p>
-            <button
-              onClick={toggleModal}
-              className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+  <div
+    className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-40"
+    onClick={toggleModal} // Closes modal when backdrop is clicked
+  >
+    <div
+      className="bg-white p-6 rounded-lg shadow-lg z-50"
+      onClick={(e) => e.stopPropagation()} // Prevent event propagation to backdrop
+    >
+      <h2 className="text-xl text-black font-bold">Pop-up Modal</h2>
+      <p className="mt-4 text-black">This is the content of the pop-up modal.</p>
+      <button
+        onClick={toggleModal} // Closes modal when the button is clicked
+        className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
     </>
   );
 };
