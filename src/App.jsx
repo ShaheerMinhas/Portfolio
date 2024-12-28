@@ -10,7 +10,7 @@ const App = () => {
        
           <Hero />
         </div>
-        <div className="mb-20">
+        <div className="mb-40">
         <About />
         </div>
 

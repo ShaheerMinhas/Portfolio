@@ -124,7 +124,7 @@ const About = () => {
     onClick={toggleModal} // Closes modal when backdrop is clicked
   >
     <div
-      className="bg-white p-6 rounded-lg shadow-lg z-50"
+      className="bg-white p-6 rounded-lg shadow-lg z-9999"
       onClick={(e) => e.stopPropagation()} // Prevent event propagation to backdrop
     >
       <h2 className="text-xl text-black font-bold">Pop-up Modal</h2>
