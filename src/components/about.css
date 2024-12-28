@@ -260,15 +260,15 @@
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
   }
 
-  /* Disable hover effects on devices that don't support hover */
-  @media (hover: none) and (pointer: coarse) {
+  @media (max-width: 768px) {
     .button-57:hover:after,
     .button-58:hover:after,
     .button-59:hover:after,
     .button-56:hover:after {
-      transform: none; /* Disable animation */
+      transform: none; 
+      opacity: 0;/* Disable animation */
     }
-  
+
     .button-57:hover span:last-child,
     .button-58:hover span:last-child,
     .button-59:hover span:last-child,
