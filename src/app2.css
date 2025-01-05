@@ -1,0 +1,9 @@
+.tech{
+    position: relative;
+    z-index: -1;
+}
+
+.buttons{
+    position: relative;
+    z-index: 1;;
+}
