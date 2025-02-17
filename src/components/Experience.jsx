@@ -32,7 +32,7 @@ const Data = [
 
 		position: 'Developer and Outreach Manager',
 
-		imageUrl: 'https://res.cloudinary.com/dzfoiqap7/image/upload/v1739801765/opuo2loehzlb0kq86osh.jpg',
+		imageUrl: 'https://res.cloudinary.com/dzfoiqap7/image/upload/v1739777991/cqqfidsmafznljmqud8t.jpg',
 		linkedin: 'https://www.linkedin.com/in/samrazafar-sz/',
 		github: '',
 		desc: "Meet Samra Zafar. She's a talented coder and a valuable member of our new software company. She not only is a quick coder but also the powerhouse of our Marketing and Outreach program who drives our best collaborations!",
