@@ -28,14 +28,14 @@ const Data = [
 		insta: '',
 	},
 	{
-		name: 'Romisha Maria',
+		name: 'Samra Zafar',
 
-		position: 'Designer',
+		position: 'Developer and Outreach Manager',
 
-		imageUrl: 'pictures/romesa.jpeg',
-		linkedin: 'https://www.linkedin.com/in/romisha-2326801a4/',
-		github: '',
-		desc: "Meet Romesa She's a talented coder and a valuable member of our new software company  ",
+		imageUrl: 'https://res.cloudinary.com/dzfoiqap7/image/upload/v1739777991/cqqfidsmafznljmqud8t.jpg',
+		linkedin: 'https://www.linkedin.com/in/samrazafar-sz/',
+		github: 'https://github.com/SamraZafar-SZ/ ',
+		desc: "Meet Samra Zafar. She's a talented coder and a valuable member of our new software company",
 
 		insta: '',
 	},
@@ -50,17 +50,7 @@ const Data = [
 		desc: ' Meet Ahsan- our brilliant coder extraordinaire! Say hello to the tech genius behind our innovative solutions! ',
 		insta: '',
 	},
-	{
-		name: 'Sajjad Ahmed',
-
-		position: 'Developer',
-
-		imageUrl: 'pictures/ahsan2.JPG',
-		linkedin: 'https://www.linkedin.com/in/sajjad-ahmed-993662268/',
-		github: '',
-		desc: ' Meet Sajjad- our brilliant coder extraordinaire! Say hello to the tech genius behind our innovative solutions! ',
-		insta: '',
-	},
+	
 	
 ];
 
