@@ -34,7 +34,7 @@ const Data = [
 
 		imageUrl: 'https://res.cloudinary.com/dzfoiqap7/image/upload/v1739777991/cqqfidsmafznljmqud8t.jpg',
 		linkedin: 'https://www.linkedin.com/in/samrazafar-sz/',
-		github: 'https://github.com/SamraZafar-SZ/ ',
+		github: '',
 		desc: "Meet Samra Zafar. She's a talented coder and a valuable member of our new software company",
 
 		insta: '',
